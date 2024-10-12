@@ -2,10 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: default;
 }
 
 ul, li {
   list-style: none;
+}
+
+::selection {
+  background-color: #F51B1B;
 }
 
 .page {
@@ -38,7 +43,7 @@ ul, li {
   display: flex;
   flex-direction: column;
   min-height: 612px;
-  max-height: 780px;
+  max-height: min(780px, calc(100vh - 80px));
 }
 
 .person__photo-wrapper {
@@ -53,9 +58,14 @@ ul, li {
   width: 150px;
   height: 80px;
   transform: rotate(8deg);
+  transition: 0.5s;
   background-image: url(../images/glasses.svg);
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.person__photo-wrapper:hover::before {
+  opacity: 0;
 }
 
 .person__photo {
@@ -137,8 +147,8 @@ ul, li {
 }
 
 .skill-card__title {
-  font-family: Esquina, sans-serif;
-  font-size: 16px;
+  font-family: Artegra, sans-serif;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1;
 }
