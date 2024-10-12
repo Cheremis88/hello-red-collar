@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+ul, li {
+  list-style: none;
+}
+
 .page {
   background-color: black;
   font-family: Commons, sans-serif;
@@ -77,7 +81,7 @@
 }
 
 .person__info::before {
-  top: -25px;
+  top: -24px;
   background-color: #F51B1B;
   border-radius: 24px 24px 0 0;
 }
@@ -85,6 +89,77 @@
 .person__info::after {
   top: -43px;
   background-image: url(../images/arrow.svg);
+  background-size: 62px;
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about__message {
+  max-width: 690px;
+  padding-top: 18px;
+}
+
+.about__cv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+  padding: 48px 48px 48px 27px;
+  border: 1px solid currentColor;
+}
+
+.about__cv::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: -1px;
+  left: 56px;
+  background-color: black;
+  background-image: url(../images/arrow_line.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.skill-card {
+  display: grid;
+  grid-template-columns: 175px 1fr;
+  gap: 20px;
+}
+
+.skill-card__title {
+  font-family: Esquina, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.separator {
+  border-top: 1px solid currentColor;
+  opacity: 0.4;
+}
+
+.skill-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 32px;
+}
+
+.text_secondary {
+  opacity: 0.4;
 }
