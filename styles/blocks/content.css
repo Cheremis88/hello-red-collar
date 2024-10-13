@@ -1,0 +1,27 @@
+.content {
+  position: relative;
+  max-width: 1440px;
+  min-width: 360px;
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: var(--padding);
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 30px;
+}
+
+.content__link {
+  position: absolute;
+  top: 26px;
+  right: 40px;
+}
+
+.content__link:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 1px;
+  border-radius: 3px;
+}
+
+.content__logo {
+  width: 240px;
+}

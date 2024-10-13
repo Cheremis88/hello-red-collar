@@ -4,20 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/fonts.css">
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/index.css">
   <title>Document</title>
 </head>
 
 <body class="page">
+
   <main class="content">
-    <img class="content__logo" src="./images/logo.svg" alt="Логотип Red Collar">
+    <a class="content__link" href="https://redcollar.ru" target="_blank">
+      <img class="content__logo" src="./images/logo.svg" alt="Логотип Red Collar">
+    </a>
 
     <section class="person">
       <div class="person__photo-wrapper">
         <img class="person__photo" src="./images/photo.jpg" alt="Фото героя">
       </div>
-      <div class="person__info"></div>
+      <div class="person__info">
+        <div class="person__name">
+          <h1 class="title person__title">Сергей Черемискин</h1>
+          <p class="text person__text">36 лет, Краснодар</p>
+        </div>
+        <address class="person__contacts">
+
+          <ul class="link-list">
+            <li class="link-list__item">
+              <img class="link-list__icon" src="./images/icon_phone.svg" alt="Трубка телефона">
+              <a class="link-list__link text person__text" href="tel:+79649397299" target="_blank">
+                +7 964 939 72 99
+              </a>
+            </li>
+            <li class="link-list__item">
+              <img class="link-list__icon" src="./images/icon_mail.svg" alt="Конверт">
+              <a class="link-list__link text person__text" href="mailto:alseta88@yandex.ru" target="_blank">
+                alseta88@yandex.ru
+              </a>
+            </li>
+            <li class="link-list__item">
+              <img class="link-list__icon" src="./images/icon_telegram.svg" alt="Логотип Telegram">
+              <a class="link-list__link text person__text" href="https://t.me/mr_cheremis" target="_blank">
+                mr_cheremis
+              </a>
+            </li>
+            <li class="link-list__item">
+              <img class="link-list__icon" src="./images/icon_github.svg" alt="Логотип Github">
+              <a class="link-list__link text person__text" href="https://github.com/cheremis88" target="_blank">
+                cheremis88
+              </a>
+            </li>
+          </ul>
+
+        </address>
+      </div>
     </section>
 
     <section class="about">
@@ -26,23 +63,12 @@
           Привет! Я обладаю знаниями в HTML, CSS, JavaScript и фреймворках,
           таких как React и Angular. Я всегда стараюсь быть в курсе последних
           технологических тенденций и постоянно улучшать свои навыки.
-          Люблю работать в команде и готов делиться своими знаниями и опытом
-          с коллегами. Я также умею работать с различными инструментами
-          и библиотеками, такими как Bootstrap, jQuery, Sass и другие.
-          Я готов принять любой вызов и настроен на постоянное развитие в своей профессии.
-          Привет! Я обладаю знаниями в HTML, CSS, JavaScript и фреймворках,
-          таких как React и Angular. Я всегда стараюсь быть в курсе последних
-          технологических тенденций и постоянно улучшать свои навыки.
-          Люблю работать в команде и готов делиться своими знаниями и опытом
-          с коллегами. Я также умею работать с различными инструментами
-          и библиотеками, такими как Bootstrap, jQuery, Sass и другие.
-          Я готов принять любой вызов и настроен на постоянное развитие в своей профессии.
         </p>
       </div>
       <div class="about__cv">
 
         <div class="skill-card">
-          <h2 class="skill-card__title">Образование</h2>
+          <h2 class="title skill-card__title">Образование</h2>
           <div class="skill-card__info">
             <div class="skill-card__text-block">
               <p class="text">Северо-Кавказская академия госслужбы</p>
@@ -60,7 +86,7 @@
         <div class="separator"></div>
 
         <div class="skill-card">
-          <h2 class="skill-card__title">Карьера</h2>
+          <h2 class="title skill-card__title">Карьера</h2>
           <div class="skill-card__info">
             <div class="skill-card__text-block">
               <p class="text">Северо-Кавказская академия госслужбы</p>
@@ -74,10 +100,11 @@
             </div>
           </div>
         </div>
+
         <div class="separator"></div>
 
         <div class="skill-card">
-          <h2 class="skill-card__title">Навыки</h2>
+          <h2 class="title skill-card__title">Навыки</h2>
           <ul class="skill-card__skills">
             <li class="text">HTML</li>
             <li class="text">CSS</li>
@@ -88,6 +115,7 @@
             <li class="text">Storybook</li>
           </ul>
         </div>
+        
       </div>
     </section>
   </main>

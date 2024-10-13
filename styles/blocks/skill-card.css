@@ -1,0 +1,22 @@
+.skill-card {
+  display: grid;
+  grid-template-columns: 175px 1fr;
+  gap: 20px;
+}
+
+.skill-card__title {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.skill-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 32px;
+}

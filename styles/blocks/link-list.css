@@ -1,0 +1,28 @@
+.link-list__item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.link-list__icon {
+  vertical-align: middle;
+  transition: 0.2s;
+}
+
+.link-list__icon:has(+.link-list__link:hover),
+.link-list__icon:has(+.link-list__link:focus-visible) {
+  transform: scale(1.2);
+}
+
+.link-list__link {
+  margin-left: 15px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.link-list__link:hover {
+  opacity: 0.4;
+}
+
+.link-list__link:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 3px;
+}

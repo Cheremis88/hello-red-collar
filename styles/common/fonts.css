@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Commons';
-  src: url(../fonts/TTCommons-Light.woff2) format('woff2');
+  src: url(../../fonts/TTCommons-Light.woff2) format('woff2');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Artegra';
-  src: url(../fonts/ArtegraSoftEx-SemiBold.woff2) format('woff2');
+  src: url(../../fonts/ArtegraSoftEx-SemiBold.woff2) format('woff2');
   font-weight: 500;
   font-display: swap;
 }

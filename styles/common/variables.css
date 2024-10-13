@@ -1,0 +1,11 @@
+:root {
+  --bg-color: black;
+  --main-color: white;
+  --accent-color: #F51B1B;
+  --text-font: Commons, sans-serif;
+  --title-font: Artegra, sans-serif;
+  --padding: 40px;
+  --padding-top-mobile: 90px;
+  --padding-bottom-mobile: 58px;
+  --padding-side-mobile: 20px;
+}
