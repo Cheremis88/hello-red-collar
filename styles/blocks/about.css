@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  font-size: 18px;
-  line-height: 24px;
+}
+
+.about *::selection {
+  background-color: var(--accent-color);
 }
 
 .about__message {
@@ -32,4 +34,24 @@
   background-image: url(../../images/arrow_line.svg);
   background-repeat: no-repeat;
   background-position: top left;
+}
+
+@media (width < 960px) {
+  .about {
+    gap: 24px;
+  }
+
+  .about__message {
+    padding-top: 0;
+  }
+
+  .about__cv {
+    gap: 24px;
+    padding: 40px 15px 30px;
+  }
+
+  .about__cv::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

@@ -13,6 +13,7 @@
 }
 
 .link-list__link {
+  vertical-align: middle;
   margin-left: 15px;
   transition: transform 0.2s, opacity 0.2s;
 }
@@ -25,4 +26,10 @@
   outline: 1px solid currentColor;
   outline-offset: 3px;
   border-radius: 3px;
+}
+
+@media (width < 960px) {
+  .link-list__item:not(:first-child) {
+    margin-top: 16px;
+  }
 }

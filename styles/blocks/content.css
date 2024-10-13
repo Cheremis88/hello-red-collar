@@ -25,3 +25,22 @@
 .content__logo {
   width: 240px;
 }
+
+@media (width < 960px) {
+  .content {
+    padding: var(--padding-top-mobile) var(--padding-side-mobile) var(--padding-bottom-mobile);
+    grid-template-columns: 320px;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .content__link {
+    top: 20px;
+    left: 20px;
+    right: auto;
+  }
+
+  .content__logo {
+    width: 220px;
+  }
+}

@@ -7,3 +7,10 @@
 .text_secondary {
   opacity: 0.4;
 }
+
+@media (width < 960px) {
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

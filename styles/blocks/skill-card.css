@@ -20,3 +20,22 @@
   flex-wrap: wrap;
   gap: 0 32px;
 }
+
+@media (width < 960px) {
+  .skill-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-card__title {
+    font-size: 16px;
+  }
+
+  .skill-card__info {
+    gap: 12px;
+  }
+
+  .skill-card__skills {
+    gap: 0 16px;
+  }
+}

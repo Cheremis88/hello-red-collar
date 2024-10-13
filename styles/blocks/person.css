@@ -38,7 +38,7 @@
   position: relative;
   background-color: var(--accent-color);
   flex-grow: 1;
-  padding: 15px 24px;
+  padding: 10px 24px 30px;
 }
 
 .person__info::before,
@@ -51,13 +51,13 @@
 }
 
 .person__info::before {
-  top: -24px;
+  top: -29px;
   background-color: var(--accent-color);
   border-radius: 24px 24px 0 0;
 }
 
 .person__info::after {
-  top: -43px;
+  top: -48px;
   background-image: url(../../images/arrow.svg);
   background-size: 62px;
   background-repeat: no-repeat;
@@ -66,6 +66,7 @@
 
 .person__title {
   font-size: 22px;
+  line-height: 28px;
   margin-bottom: 8px;
 }
 
@@ -76,4 +77,29 @@
 .person__contacts {
   margin-top: 40px;
   font-style: normal;
+}
+
+@media (width < 960px) {
+  .person {
+    min-height: 612px;
+    max-height: none;
+  }
+
+  .person__info {
+    padding: 5px 16px 30px;
+  }
+
+  .person__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+
+  .person__text {
+    font-size: 16px;
+  }
+
+  .person__contacts {
+    margin-top: 32px;
+  }
 }
