@@ -66,6 +66,10 @@
   background-position: top center;
 }
 
+.person__name {
+  cursor: default;
+}
+
 .person__title {
   font-size: 22px;
   line-height: 28px;

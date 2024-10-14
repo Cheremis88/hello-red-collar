@@ -18,7 +18,7 @@
 .skill-card__skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 32px;
+  gap: 5px 32px;
 }
 
 @media (width < 960px) {
@@ -36,6 +36,6 @@
   }
 
   .skill-card__skills {
-    gap: 0 16px;
+    gap: 5px 16px;
   }
 }

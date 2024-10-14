@@ -1,0 +1,43 @@
+.tooltip {
+  position: relative;
+  text-decoration: underline dashed;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+
+.tooltip__hint {
+  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: 130%;
+  transform: translateX(-50%);
+  width: max-content;
+  padding: 2px 7px;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+}
+
+.tooltip__hint::before {
+  content: '';
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: var(--accent-color);
+}
+
+.tooltip:hover .tooltip__hint {
+  visibility: visible;
+  transition: 0s 0.3s;
+}
+
+@media (width < 960px) {
+  .tooltip__hint {
+    bottom: 140%;
+  }
+
+  .tooltip__hint::before {
+    top: 90%;
+  }
+}
