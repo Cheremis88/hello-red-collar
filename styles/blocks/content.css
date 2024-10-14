@@ -28,9 +28,9 @@
 
 @media (width < 960px) {
   .content {
-    padding: var(--padding-top-mobile) var(--padding-side-mobile) var(--padding-bottom-mobile);
-    grid-template-columns: 320px;
-    justify-content: center;
+    max-width: 360px;
+    padding: 90px 20px 58px;
+    grid-template-columns: 1fr;
     gap: 40px;
   }
 

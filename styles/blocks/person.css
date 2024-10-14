@@ -1,7 +1,9 @@
 .person {
+  position: sticky;
+  top: var(--padding);
   display: flex;
   flex-direction: column;
-  max-height: min(780px, calc(100vh - 2 * var(--padding)));
+  max-height: 780px;
 }
 
 .person__photo-wrapper {
@@ -81,6 +83,7 @@
 
 @media (width < 960px) {
   .person {
+    position: static;
     min-height: 612px;
     max-height: none;
   }
