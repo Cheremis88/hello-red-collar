@@ -1,6 +1,4 @@
 .person {
-  position: sticky;
-  top: var(--padding);
   display: flex;
   flex-direction: column;
   max-height: 780px;
@@ -89,7 +87,7 @@
   .person {
     position: static;
     min-height: 612px;
-    max-height: none;
+    max-height: auto;
   }
 
   .person__info {

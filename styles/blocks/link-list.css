@@ -19,7 +19,7 @@
 }
 
 .link-list__link:hover {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .link-list__link:focus-visible {

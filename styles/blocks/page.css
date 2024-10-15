@@ -1,4 +1,6 @@
 .page {
+  display: flex;
+  min-height: 100vh;
   background-color: var(--bg-color);
   font-family: var(--text-font), sans-serif;
   color: var(--main-color);
