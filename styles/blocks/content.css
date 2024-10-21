@@ -15,7 +15,7 @@
   position: absolute;
   top: 26px;
   right: 40px;
-  transition: 0.2s;
+  transition: transform 0.2s;
 }
 
 .content__link:hover {
@@ -24,7 +24,7 @@
 
 .content__link:focus-visible {
   outline: 1px solid currentColor;
-  outline-offset: 1px;
+  outline-offset: 3px;
   border-radius: 3px;
 }
 
@@ -32,7 +32,7 @@
   width: 240px;
 }
 
-@media (width < 960px) {
+@media (width < 1024px) {
   .content {
     max-width: 360px;
     padding: 90px 20px 58px;

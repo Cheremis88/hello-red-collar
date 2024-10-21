@@ -28,7 +28,7 @@
   border-radius: 3px;
 }
 
-@media (width < 960px) {
+@media (width < 1024px) {
   .link-list__item:not(:first-child) {
     margin-top: 16px;
   }

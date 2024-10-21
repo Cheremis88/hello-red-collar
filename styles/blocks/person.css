@@ -83,7 +83,7 @@
   font-style: normal;
 }
 
-@media (width < 960px) {
+@media (width < 1024px) {
   .person {
     position: static;
     min-height: 612px;
